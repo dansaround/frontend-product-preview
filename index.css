@@ -124,11 +124,21 @@ p {
 /* add media queries Desktop */
 /* Media query for desktop view */
 @media only screen and (min-width: 768px) {
+  .main-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: hsl(30, 38%, 92%);
+  }
   .card {
     height: 350px;
     width: 450px;
     flex-direction: row;
     justify-content: space-between;
+    transform: scale(1.2);
   }
 
   .card img {
@@ -156,7 +166,7 @@ p {
     justify-content: center;
     align-items: left;
     margin: 0;
-    transform: scale(0.9);
+    transform: scale(0.95);
   }
 
   .textside h1 {
@@ -174,25 +184,35 @@ p {
   }
 
   .textside p {
-    font-size: 12px;
+    font-size: 11px;
     margin-left: 25px;
+    margin-bottom: 15px;
+    padding-right: 1rem;
   }
 
   .price {
-    margin-left: -10px;
-    transform: scale(0.7);
+    margin: 0;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .price h5 {
+    margin: 0;
+    margin-left: 10px;
+    font-size: 12px;
   }
   .button-area {
-    margin-left: 25px;
     height: 100%;
   }
 
   .button-area button {
     padding: 15px;
-    height: 45px;
+    height: 50px;
     width: 100%;
     font-size: 10px;
-    transform: scale(0.9);
+    transform: scale(0.8);
   }
 
   .button-area button img {
